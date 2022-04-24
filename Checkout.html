@@ -26,6 +26,16 @@
             {
               background-color: lightblue;
             }
+          
+          #People_info{
+            float: left;
+            padding-left: 20%;
+          }
+
+          #Card_Info{
+            float: right;
+            padding-right: 20%;
+          }
         </style>
 
         <title>Checkout</title> 
@@ -53,7 +63,54 @@
                     </ul>
                   </div>
                 </div>
-              </nav>	
-            </div>
+              </nav>
+              <br>
+              <div id="People_info"><form>
+                <h4>PERSONAL INFORMATION</h4>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required>
+                <br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required>
+                <br><br>
+                <label for="email">Email Address:</label><br>
+                <input type="text" id="email" name="email" required>
+                <br><br>
+                <label for="address1">Address 1:</label><br>
+                <input type="text" id="address1" name="address1" required>
+                <br><br>
+                <label for="address2">Address 2:</label><br>
+                <input type="text" id="address2" name="address2" required>
+                <br><br>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" required>
+                <br><br>
+                <label for="county">County:</label><br>
+                <input type="text" id="county" name="county" required>
+                <br><br>
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country" required>
+                <br><br>
+                <input type="submit" value="Submit">
+              </form></div>
+              
+              <div id="Card_Info"><form>
+                  <h4>CREDIT CARD INFORMATION</h4>
+                  <label for="card_No">CREDIT CARD NUMBER:</label><br>
+                  <input type="number" id="card_No" name="card_No" required>
+                  <br><br>
+                  <label for="cvv">CVV:</label><br>
+                  <input type="number" id="cvv" name="cvv" required>
+                  <br><br>
+                  <label for="Exp_Date">EXPIRATION DATE:</label><br>
+                  <input type="number" id="Exp_Date" name="Exp_Date" required>
+                  <br><br>
+                  <label for="Zip">BILLING ZIP:</label><br>
+                  <input type="text" id="Zip" name="Zip" required>
+                  <br><br>
+                  <input type="submit" value="Submit">
+              </form></div>
+
+        </div>
     </body>
 </html>
